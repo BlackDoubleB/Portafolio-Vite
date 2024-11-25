@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo-pagina: #000000;
+    --fondo-card: #0e0d0d;
+
+    --color1-letra-titulo: #EFDFEA;
+    --color2-letra-titulo: #CEC3EF;
+
+    --color-letra-subtitulo: #EFDFEA;
+    --color-letra-parrafo: #E2E2EA;
+
+    --color-letra-boton: #25242C;
+    --fondo-boton: #DDBCCF;
+    --borde: #9191a3;
+
+}
+
+body {
+    /* defines circular radial gradient with red, blue, and black color */
+    background-color: var(--fondo-pagina);
+}
+
+.degradado {
+    font-weight: bold;
+    background: linear-gradient(to right, #f7e6ec, #c1b7e2, #9a8fc4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
