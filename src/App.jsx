@@ -1,14 +1,13 @@
 import './index.css'
 import { Navbar } from './components/navbar/Navbar'
-
-import { TargetHero } from './components/about/TargetHero'
+import { Hero } from './components/about/Hero'
 function App() {
 
 
   return (
-    <div>
+    <div className='min-h-screen' >
       <Navbar />
-      <TargetHero/>
+      <Hero/>
     </div>
   )
 }

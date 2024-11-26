@@ -12,8 +12,8 @@ export default {
         bonher_royale: ['Bonheur Royale', 'cursive']
       },
       screens: {
-        xs: '500px', 
-      }
+        xs: '500px',
+      },
     },
   },
   plugins: [],

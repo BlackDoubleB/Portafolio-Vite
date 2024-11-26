@@ -1,3 +1,27 @@
+.section-about::-webkit-scrollbar {
+    display: none;
+}
+
+.section-about{
+   /* max-height: 727px; */
+   max-height: 800px;
+
+}
+@media screen and (min-height: 799px) {
+    .section-about {
+        display: flex;
+        align-items: center !important;
+        justify-content: center;
+    } 
+}
+
+@media screen and (max-height: 800px) {
+    .section-about {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    } 
+}
 .container-title {
     display: flex;
     flex-direction: column;

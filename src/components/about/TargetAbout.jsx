@@ -1,17 +1,16 @@
 import './About.css'
 export const TargetAbout = () => {
-    return (
-        <section className='bg-[var(--fondo-pagina)]
-        md:w-[250px] py-5 md:rounded-[40px] md:border md:border-[--borde]
-        lg:w-[280px]
-        xl:w-[380px] 
-        2xl:w-[410px] 2xl:h-[700px]'>
-
+    return (       
+        <section className='section-about bg-[var(--fondo-pagina)]
+                            md:w-[250px] md:rounded-[40px] md:border md:border-[--borde] md:sticky top-20
+                            md:flex md:flex-col md:overflow-y-auto md:items-center md:justify-center md:h-[calc(100vh-95px)] 
+                            lg:w-[280px]
+                            xl:w-[380px] 
+                            2xl:w-[410px]'>
                     <div className='m-5
                                     gap-5
-                                    md:gap-0
                                     xs:flex items-center
-                                    md:block 
+                                    md:block md:gap-0
                                     xl:m-10'>
                         <h2 className='font-bonher_royale text-[var(--color-letra-subtitulo)] 
                         hidden text-center text-3xl
@@ -25,14 +24,13 @@ export const TargetAbout = () => {
                                             md:hidden' >Reyna Blacido Aparicio</h2>
                             <img className='rounded-[40px]
                                             sm:w-[250px] sm:h-[250px]
-                                            md:w-auto md:h-auto
-                                            '  src='/assets/perfil.png'></img>
+                                            md:w-auto md:h-auto'  
+                                 src='/assets/perfil.png'></img>
                         </div>
                       
                        
-                        <div className='flex flex-col justify-center gap-[10px]
-                        '>
-                            <div className='pt-5'>
+                        <div className='flex flex-col justify-center gap-[10px]'>
+                            <div className='pt-10'>
                                 <h4 className='font-encode_sans_expanded font-[100] text-[var(--color-letra-subtitulo)] text-[1rem]'>Telefono:</h4>
                                 <p className='font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
                                 text-base
@@ -52,13 +50,12 @@ export const TargetAbout = () => {
                                 text-base
                                 md:tex-lg'>Lima - Perú</p>
                             </div>
-
                         </div>
 
                         <div></div>
                     </div>
+                    
+        </section>      
 
-
-        </section>
     );
 }
