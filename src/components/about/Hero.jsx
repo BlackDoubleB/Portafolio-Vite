@@ -6,7 +6,7 @@ export const Hero = () => {
     return (
         <section className='w-full min-h-screen 
                             sm:flex sm:justify-center sm:items-center'>
-            <div className='min-h-screen w-full flex flex-col
+            <div className='bg-red-200 min-h-screen w-full flex flex-col
                             justify-center items-center
                             sm:w-[483.953px] 
                             md:w-[730px] md:px-0 md:gap-[5px] md:flex md:flex-row md:items-start
@@ -16,6 +16,7 @@ export const Hero = () => {
 
                 <TargetAbout/>
                 <TargetSkills/>
+               
             </div>
         </section>
     );

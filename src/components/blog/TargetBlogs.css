@@ -1,0 +1,14 @@
+ .card__blog {
+	overflow: hidden;
+	border-radius: 22px;
+	position: relative;
+}
+
+.card__blog img {
+	object-fit: cover;
+	object-position: center 0;
+}
+
+.container-text::-webkit-scrollbar {
+    display: none;
+} 

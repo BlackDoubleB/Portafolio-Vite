@@ -54,8 +54,7 @@ TargetProjects.propTypes = {
     title:propTypes.string.isRequired,
     descripcion:propTypes.string.isRequired,
     imgSrc:propTypes.string.isRequired,
-    skills:propTypes.string.isRequired,
+    skills:propTypes.array.isRequired,
     repoURL:propTypes.string.isRequired,
     demoURL:propTypes.string.isRequired,
-    clase:propTypes.string.isRequired
 };

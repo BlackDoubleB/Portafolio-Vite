@@ -11,7 +11,8 @@
 :root {
     --fondo-pagina: #000000;
     --fondo-card: #0e0d0d;
-
+    --fondo-terminal:#0D0D0D;
+    --nav-terminal:#1A1B23;
     --color1-letra-titulo: #EFDFEA;
     --color2-letra-titulo: #CEC3EF;
 
@@ -38,4 +39,9 @@ body {
     font-family: "Encode Sans Expanded", sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+
+pre{
+    margin: 0 !important;
+    border-radius: 0 0 10px 10px !important;
 }

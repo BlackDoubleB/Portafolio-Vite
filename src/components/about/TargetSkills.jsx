@@ -2,7 +2,7 @@ import { iconSkill } from './IconSkills';
 import {CompButton} from '../atoms/button';
 import {Comptitle} from '../atoms/title';
 import {Projects} from '../proyects/Projects';
-
+import {Blog} from '../blog/Blog';
 export const TargetSkills = () => {
     const valores = [
         {accion: 'Descargar CV', icono: '/assets/symbols/download.svg'},
@@ -87,6 +87,7 @@ export const TargetSkills = () => {
                  
 
                     <Projects/>
+                    <Blog/>
         </section>
                 
     );
