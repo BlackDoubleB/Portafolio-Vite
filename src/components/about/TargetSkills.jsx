@@ -1,6 +1,6 @@
 import { iconSkill } from './IconSkills';
 import {CompButton} from '../atoms/button';
-import {Comptitle} from '../atoms/title';
+import {TitleH3} from '../atoms/TitleH3';
 import {Projects} from '../proyects/Projects';
 import {Blog} from '../blog/Blog';
 export const TargetSkills = () => {
@@ -41,7 +41,7 @@ export const TargetSkills = () => {
                         <div className='p-5
                                         2xl:p-10'>
 
-                            <Comptitle title={"Habilidades"}/>
+                            <TitleH3 titleH3={"Habilidades"} className="lg:px-5 2xl:px-0"/>
 
                             <div className='flex justify-center flex-wrap    
                                             lg:flex lg:justify-center

@@ -1,4 +1,4 @@
-import { Comptitle } from "../atoms/title";
+import { TitleH3 } from "../atoms/TitleH3";
 import { TargetBlogs } from "./TargetBlogs";
 import { blogData } from "../data/blogData";
 export const Blog = () => {
@@ -8,7 +8,7 @@ export const Blog = () => {
                                             2xl:w-[1000px]">
             <div className="flex flex-col w-auto p-5 
                             2xl:p-10">
-                <Comptitle title="Blog" />
+                <TitleH3 titleH3="Blog" />
                 <div className="flex flex-wrap 
                                 justify-center
                                 gap-y-5

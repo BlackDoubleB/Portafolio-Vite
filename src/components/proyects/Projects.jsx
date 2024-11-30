@@ -1,6 +1,6 @@
 import { getProjectsData} from "../data/projectsData.jsx"
 import { TargetProjects } from "./TargetProjects.jsx"
-import { Comptitle } from '../atoms/title.jsx';
+import { TitleH3 } from '../atoms/TitleH3';
 
 export const Projects = () => {
     return(
@@ -12,7 +12,7 @@ export const Projects = () => {
         
         <div className="flex flex-col w-auto p-5 
         2xl:p-10">
-            <Comptitle title="Proyectos" />
+            <TitleH3 titleH3="Proyectos" className="lg:px-5 2xl:px-0" />
             <div className="portfolio__elements flex flex-wrap 
                               justify-center
                               gap-y-5
