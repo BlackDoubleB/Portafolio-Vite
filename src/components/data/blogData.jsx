@@ -15,7 +15,13 @@ export const blogData =[
         imgSrc: '/assets/blog/articulo3.png',
 		title: 'Metodo VS Funcion',
 		link: '../blog/metodo-vs-funcion',
-        descripcion: "Las funciones flecha (arrow functions) en JS son una forma más concisa de escribir funciones introducidas en ECMAScript 6 (ES6). "
+        descripcion: "Descubre la diferencia clave entre funciones y métodos en JavaScript."
+    },
+    {
+        imgSrc: '/assets/blog/articulo4.png',
+		title: 'Hoisting',
+		link: '../blog/hoisting',
+        descripcion: "Entiende el concepto de hoisting en JavaScript: cómo las declaraciones de variables y funciones son movidas a la parte superior de su ámbito durante la fase de compilación, permitiendo su uso antes de ser definidas."
     }
 ];
 

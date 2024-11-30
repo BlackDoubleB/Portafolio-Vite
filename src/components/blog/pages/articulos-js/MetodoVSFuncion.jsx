@@ -19,26 +19,36 @@ export const MetodoVSFuncion = () => {
                 <div className="w-full 2xl:px-10">
 
                 <ComTitleBlog tituloBlog={"METODO VS FUNCIÓN"}/>
+                    <Paragraph>
+                    En JavaScript, los métodos y funciones son conceptos fundamentales que comparten algunas similitudes, pero también tienen diferencias clave dependiendo del contexto en el que se usen. A continuación, exploraremos qué son, cómo se definen y cuándo utilizarlos.
+                    </Paragraph>
 
-                    <Paragraph paragraph={`En JavaScript, los métodos y funciones son conceptos fundamentales que comparten algunas similitudes, pero también tienen diferencias clave dependiendo del contexto en el que se usen. A continuación, exploraremos qué son, cómo se definen y cuándo utilizarlos.`} className="text-cyan-50" />
                     <dl>
                         <CombDt combDt={`Función :`}/>
-                        <CombDd className="!px-0"  combDd={`Una función es un bloque de código independiente que realiza una tarea específica. Puedes llamarla desde cualquier parte del código y pasarle argumentos.`} combConsole={<Console script={`function saludar() {
+                        <CombDd className="!px-0">
+                        Una función es un bloque de código independiente que realiza una tarea específica. Puedes llamarla desde cualquier parte del código y pasarle argumentos.
+                        <Console script={`function saludar() {
   console.log("Hola!");
 }
-`}/>}/>
-
-
+`}/>
+                        </CombDd>
+                    
                         <CombDt combDt={`Método :`}/>
-                        <CombDd className="!px-0" combDd={`Un método es una función que es propiedad de un objeto. Se define dentro de un objeto y se invoca con la sintaxis objeto.metodo(). Ejemplo:`} combConsole={<Console script={`let persona = {
+                        <CombDd className="!px-0">
+                        Un método es una función que es propiedad de un objeto. Se define dentro de un objeto y se invoca con la sintaxis objeto.metodo(). Ejemplo:
+                        <Console script={`let persona = {
   nombre: "Blanca",
   saludar: function() {
     console.log("Hola, " + this.nombre + "!");
   }
 };
 
-persona.saludar(); // Llama al método, muestra "Hola, Blanca!"`}/>}/>
+persona.saludar(); // Llama al método, muestra "Hola, Blanca!"`}/>
+                        </CombDd>
+                        
                     </dl>
+
+                    
                 </div>
             </div>
         </section>

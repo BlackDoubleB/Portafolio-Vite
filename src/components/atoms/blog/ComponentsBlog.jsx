@@ -16,20 +16,20 @@ export const ComTitleBlog = ({tituloBlog}) =>
 export const CombDt = ({combDt}) =>{
     return(
         <dt className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] text-[1rem] font-bold
-                       px-1 py-5">
+                       px-0 py-5 ">
             {combDt}
         </dt>
     );
 }
 
-export const CombDd = ({combDd, combConsole=null, className=null}) =>{
+export const CombDd = ({children, className=null}) =>{
     return(
-        <dd className={`font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
-                       pb-0
-                       text-base px-1 text-justify
-                       md:tex-lg md:px-5 ${className}`}>
-                       {combDd}
-                       {combConsole}
+        <dd
+            className={`font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
+                       pb-0 text-base px-1 text-justify
+                       md:tex-lg md:px-5 ${className}`}
+        >
+            {children}
         </dd>
     );
 }
@@ -43,9 +43,8 @@ CombDt.propTypes = {
 }
 
 CombDd.propTypes = {
-    combDd:PropTypes.string.isRequired,
-    combConsole:PropTypes.string,
-    className:PropTypes.string
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string
 }
 
 
