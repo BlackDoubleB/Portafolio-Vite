@@ -22,12 +22,12 @@ export const CombDt = ({combDt}) =>{
     );
 }
 
-export const CombDd = ({combDd, combConsole=null}) =>{
+export const CombDd = ({combDd, combConsole=null, className=null}) =>{
     return(
-        <dd className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
+        <dd className={`font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
                        pb-0
                        text-base px-1 text-justify
-                       md:tex-lg md:px-5">
+                       md:tex-lg md:px-5 ${className}`}>
                        {combDd}
                        {combConsole}
         </dd>
@@ -44,7 +44,8 @@ CombDt.propTypes = {
 
 CombDd.propTypes = {
     combDd:PropTypes.string.isRequired,
-    combConsole:PropTypes.string
+    combConsole:PropTypes.string,
+    className:PropTypes.string
 }
 
 

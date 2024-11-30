@@ -10,5 +10,12 @@ export const blogData =[
 		title: 'Funciones Flecha',
 		link: '../blog/funciones-flecha',
         descripcion: "Las funciones flecha (arrow functions) en JS son una forma más concisa de escribir funciones introducidas en ECMAScript 6 (ES6). "
+    },
+    {
+        imgSrc: '/assets/blog/articulo3.png',
+		title: 'Metodo VS Funcion',
+		link: '../blog/metodo-vs-funcion',
+        descripcion: "Las funciones flecha (arrow functions) en JS son una forma más concisa de escribir funciones introducidas en ECMAScript 6 (ES6). "
     }
 ];
+
