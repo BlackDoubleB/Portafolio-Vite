@@ -31,21 +31,21 @@ export const FuncionesFlecha = () => {
                         <CombDt combDt={`1. Función Flecha con un Solo Parámetro y una Sola Línea de Código`}/>
                         <CombDd>
                         Si la función tiene un solo parámetro y realiza una operación de una sola línea, puedes omitir tanto los paréntesis alrededor del parámetro como las llaves {}. El valor de esta operación será retornado automáticamente.
-                        <Console script={`const doble = x => x * 2; // Retorna x * 2
+                        <Console language='language-javascript' script={`const doble = x => x * 2; // Retorna x * 2
 console.log(doble(4));    // Imprime: 8`}/>
                         </CombDd>
 
                         <CombDt combDt={`2. Función Flecha con Múltiples Parámetros`}/>
                         <CombDd>
                         Si la función tiene más de un parámetro, debes usar paréntesis alrededor de los parámetros. También puedes omitir las llaves si la función tiene una sola línea, y el resultado se retornará automáticamente.
-                        <Console script={`const sumar = (a, b) => a + b;
+                        <Console language='language-javascript' script={`const sumar = (a, b) => a + b;
 console.log(sumar(3, 5)); // Imprime: 8`}/>
                         </CombDd>
 
                         <CombDt combDt={`3. Función Flecha con Cuerpo en Bloque`}/>
                         <CombDd>
                         Cuando necesitas ejecutar varias líneas de código, debes usar llaves {} para definir un cuerpo en bloque y añadir return explícito si quieres retornar un valor. Las funciones flecha con cuerpo en bloque no retornan automáticamente el último valor por lo que si quieres que retorne debes escribirlo explicitamente con return. Si omites return en una función flecha con cuerpo en bloque, la función devolverá undefined, ya que no se está devolviendo ningún valor explícito.
-                        <Console script={`const calcularAreaRectangulo = (base, altura) => {
+                        <Console language='language-javascript' script={`const calcularAreaRectangulo = (base, altura) => {
   const area = base * altura;
   return area; // Retorno explícito
 };
@@ -56,7 +56,7 @@ console.log(calcularAreaRectangulo(4, 5)); // Imprime: 2`}/>
                         <CombDt combDt={`4. Función Flecha sin Parámetros`}/>
                         <CombDd>
                         Si no se necesitan parámetros, se dejan los paréntesis vacíos () antes de ={">"}.
-                        <Console script={`const saludo = () => "¡Hola, mundo!";
+                        <Console language='language-javascript' script={`const saludo = () => "¡Hola, mundo!";
 console.log(saludo()); // Imprime: ¡Hola, mundo!`}/>
                         </CombDd>
                         
@@ -64,7 +64,7 @@ console.log(saludo()); // Imprime: ¡Hola, mundo!`}/>
                         <CombDt combDt={`5. Función Flecha como Retorno de Otra Función`}/>
                         <CombDd>
                         Las funciones flecha son especialmente útiles para funciones que retornan otras funciones. Aquí se usa una función flecha dentro de otra:
-                        <Console script={`const crearMultiplicador = factor => numero => numero * factor;
+                        <Console language='language-javascript' script={`const crearMultiplicador = factor => numero => numero * factor;
 
 const doble = crearMultiplicador(2);
 console.log(doble(5)); // Imprime: 10`}/>
@@ -74,7 +74,7 @@ console.log(doble(5)); // Imprime: 10`}/>
                         <CombDt combDt={`6. Función Flecha Inmediata (IIFE - Immediately Invoked Function Expression)`}/>
                         <CombDd>
                         También puedes usar funciones flecha como IIFE. Estas funciones se ejecutan inmediatamente al definirse.
-                        <Console script={`(
+                        <Console language='language-javascript' script={`(
  () => console.log("Ejecutando función inmediatamente")
 )();`}/>
                         </CombDd>

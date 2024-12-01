@@ -39,7 +39,7 @@ export const TiposVariables = () => {
                         <CombDt combDt={"1- VAR :"}/>
                         <CombDd>
                         Puedes reasignar el valor de una variable declarada con var.
-                        <Console 
+                        <Console language='language-javascript' 
 script={`var x = 10;
 x = 20;  // Es válido
 let:`}/>
@@ -49,7 +49,7 @@ let:`}/>
                         <CombDt combDt={"2- LET :"}/>
                         <CombDd>
                         Puedes reasignar el valor de una variable declarada con let.
-                        <Console 
+                        <Console language='language-javascript' 
 script={`let x = 10;
 x = 20;  // Es válido`}/>
                         </CombDd>
@@ -58,12 +58,12 @@ x = 20;  // Es válido`}/>
                         <CombDt combDt={"3- CONST :"}/>
                         <CombDd>
                         No puedes reasignar una variable declarada con const una vez que se le ha asignado un valor. Esto significa que el valor de la variable es constante.
-                        <Console 
+                        <Console language='language-javascript' 
 script={`const x = 10;
 x = 20;  // Error: Assignment to constant variable`}/>
                         Sin embargo, si el valor asignado a la variable const es un objeto o un arreglo, puedes modificar sus propiedades o elementos, pero no puedes reasignar el objeto o arreglo completo.
 
-                        <Console 
+                        <Console language='language-javascript' 
 script={`const obj = { name: "John" };
 obj.name = "Doe";  // Esto es válido
 obj = {}; // Error: Assignment to constant variable`}/>
@@ -76,7 +76,7 @@ obj = {}; // Error: Assignment to constant variable`}/>
                         <CombDt combDt={"1- VAR :"}/>
                         <CombDd>
                         Puedes redefinir una variable declarada con var dentro del mismo contexto (función o global).
-                        <Console 
+                        <Console language='language-javascript'
 script={`var x = 10;
 var x = 20;  // Es válido
 console.log(x);  // 20`}/>
@@ -86,7 +86,7 @@ console.log(x);  // 20`}/>
                         <CombDt combDt={"2- LET :"}/>
                         <CombDd>
                         No puedes redefinir una variable declarada con let dentro del mismo bloque o función. Si lo haces, obtendrás un SyntaxError.
-                        <Console 
+                        <Console language='language-javascript' 
 script={`let x = 10;
 let x = 20;  // Error: Identifier 'x' has already been declared`}/>
                         </CombDd>
@@ -94,7 +94,7 @@ let x = 20;  // Error: Identifier 'x' has already been declared`}/>
                         <CombDt combDt={"3- CONST :"}/>
                         <CombDd>
                         No puedes redefinir una variable declarada con const. Esto es similar a let, y te arrojará un SyntaxError si intentas redefinirla.
-                        <Console 
+                        <Console language='language-javascript' 
 script={`const x = 10;
 const x = 20;  // Error: Identifier 'x' has already been declared`}/>
                         </CombDd> 

@@ -19,7 +19,7 @@ export const Hoisting = () => {
 
                 <div className="w-full 2xl:px-10">
 
-                <ComTitleBlog tituloBlog={"Hoisting"}/>
+                <ComTitleBlog tituloBlog={"HOISTING"}/>
                     <TitleH3 titleH3={"VAR"}/>
                     <dl>
                         <CombDt combDt={`Hoisting con VAR en Condicionales y Bloques:`}/>
@@ -28,7 +28,7 @@ export const Hoisting = () => {
                         <br/>
                         <br/>
                         Cuando declaras variables con var dentro de una función, el hoisting las eleva al inicio de la función, pero solo dentro del contexto de esa función. Es decir, las declaraciones de las variables se mueven a la parte superior de la función, pero el valor de la variable no se asigna hasta que se alcanza la línea de código correspondiente.
-                        <Console script={`--Si pones:
+                        <Console language='language-javascript' script={`--Si pones:
 function ejemplo() {
 console.log(mensaje); // undefined, debido al hoisting
 var mensaje = "Hola desde la función";
@@ -61,7 +61,7 @@ ejemplo();
                         Tener en cuenta que el comportamiento de hoisting con let y const no ha cambiado desde su introducción en ES6 (2015), y sigue siendo el mismo en las versiones actuales de JavaScript, incluyendo 2024. 
                         <br/><br/>
                         <strong>Ejemplo:</strong>
-                        <Console script={`console.log(myVar); // ReferenceError: Cannot access 'myVar' before initialization
+                        <Console language='language-javascript' script={`console.log(myVar); // ReferenceError: Cannot access 'myVar' before initialization
 let myVar = "Hola";
 `}/>
                         </CombDd>
@@ -78,7 +78,7 @@ let myVar = "Hola";
                      En el caso de las funciones, solo se da el hoisting en declaraciones de función, pero no las expresiones de la función(variables que contienen funcion).
                      <br/><br/>
                      <strong>Ejemplo:</strong>
-                     <Console script={`/* Declaración de función */
+                     <Console language='language-javascript' script={`/* Declaración de función */
 
 foo(); // "bar"
 

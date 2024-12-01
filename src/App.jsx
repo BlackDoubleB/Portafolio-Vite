@@ -6,6 +6,7 @@ import { TiposVariables } from './components/blog/pages/articulos-js/TiposVariab
 import { FuncionesFlecha } from './components/blog/pages/articulos-js/FuncionesFlecha.jsx';
 import { MetodoVSFuncion } from './components/blog/pages/articulos-js/MetodoVSFuncion.jsx'
 import {Hoisting} from './components/blog/pages/articulos-js/Hoisting.jsx';
+import { AfterBefore } from "./components/blog/pages/articulos-css/AfterBefore.jsx";
 function App() {
   return (
             <div className="min-h-screen">
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/blog/funciones-flecha" element={<FuncionesFlecha/>} />
                     <Route path="/blog/metodo-vs-funcion" element={<MetodoVSFuncion/>} />
                     <Route path="/blog/hoisting" element={<Hoisting/>} />
+                    <Route path="/blog/after-before" element={<AfterBefore/>} />
                 </Routes>
             </div>
   )

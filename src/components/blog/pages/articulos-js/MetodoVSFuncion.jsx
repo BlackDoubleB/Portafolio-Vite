@@ -27,7 +27,7 @@ export const MetodoVSFuncion = () => {
                         <CombDt combDt={`Función :`}/>
                         <CombDd className="!px-0">
                         Una función es un bloque de código independiente que realiza una tarea específica. Puedes llamarla desde cualquier parte del código y pasarle argumentos.
-                        <Console script={`function saludar() {
+                        <Console language='language-javascript' script={`function saludar() {
   console.log("Hola!");
 }
 `}/>
@@ -36,7 +36,7 @@ export const MetodoVSFuncion = () => {
                         <CombDt combDt={`Método :`}/>
                         <CombDd className="!px-0">
                         Un método es una función que es propiedad de un objeto. Se define dentro de un objeto y se invoca con la sintaxis objeto.metodo(). Ejemplo:
-                        <Console script={`let persona = {
+                        <Console language='language-javascript' script={`let persona = {
   nombre: "Blanca",
   saludar: function() {
     console.log("Hola, " + this.nombre + "!");

@@ -4,7 +4,7 @@ import 'prism-themes/themes/prism-dracula.css';
 import { Icon } from '@iconify/react';
 import PropTypes from 'prop-types';
 
-export const Console = ({ script }) => {
+export const Console = ({ script, language }) => {
     const codeRef = useRef(null);
     const [icon, setIcon] = useState("uil:copy");
     const [copied, setCopied] = useState("Copiar");
@@ -43,7 +43,7 @@ export const Console = ({ script }) => {
 
             </div>
             <pre>
-                <code ref={codeRef} className="code language-javascript">
+                <code ref={codeRef} className={language}>
                     {script}
                 </code>
             </pre>
@@ -52,5 +52,6 @@ export const Console = ({ script }) => {
 }
 
 Console.propTypes = {
-    script: PropTypes.string.isRequired
+    script: PropTypes.string.isRequired,
+    language:PropTypes.string.isRequired
 }
