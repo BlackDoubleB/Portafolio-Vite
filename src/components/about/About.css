@@ -2,24 +2,20 @@
     display: none;
 }
 
-.section-about{
-   /* max-height: 727px; */
-   max-height: 800px;
 
-}
-@media screen and (min-height: 799px) {
+@media screen and (min-height: 1000px) {
     .section-about {
+        max-height: 710px;
         display: flex;
-        align-items: center !important;
-        justify-content: center;
     } 
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 681px) {
     .section-about {
-        display: flex;
-        align-items: start;
-        justify-content: start;
+        max-height: 250px; 
+        overflow-y: auto;  
+        justify-content: flex-start; 
+        align-items: flex-start;  
     } 
 }
 .container-title {

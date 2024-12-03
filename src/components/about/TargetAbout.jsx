@@ -2,14 +2,20 @@ import './About.css'
 export const TargetAbout = () => {
     return (       
         <section className='section-about bg-[var(--fondo-pagina)]
-                            md:w-[250px] md:rounded-[40px] md:border md:border-[--borde] md:sticky top-20
-                            md:flex md:flex-col md:overflow-y-auto md:items-center md:justify-center md:h-[calc(100vh-95px)] 
+                            flex flex-col justify-center                            
+                            min-h-[calc(100vh-32px)]
+                    
+                            md:w-[250px] md:rounded-[40px] md:border md:border-[--borde] md:sticky
+                            md:top-24
+                            md:flex md:flex-col 
+                            md:items-center md:justify-center 
+                            md:min-h-[calc(100vh-128px)]   
+                                
                             lg:w-[280px]
                             xl:w-[380px] 
                             2xl:w-[410px]'>
-                    <div className='m-5
-                                    gap-5
-                                    xs:flex items-center
+                    <div className='m-5 gap-5 
+                                    xs:flex xs:items-center
                                     md:block md:gap-0
                                     xl:m-10'>
                         <h2 className='font-bonher_royale text-[var(--color-letra-subtitulo)] 
@@ -22,7 +28,8 @@ export const TargetAbout = () => {
                              <h2 className='font-bonher_royale text-[var(--color-letra-subtitulo)]
                                             text-center text-3xl pb-5
                                             md:hidden' >Reyna Blacido Aparicio</h2>
-                            <img className='rounded-[40px]
+                            <img className='rounded-[40px] object-cover
+                                            w-[350px] h-[350px] 	
                                             sm:w-[250px] sm:h-[250px]
                                             md:w-auto md:h-auto'  
                                  src='/assets/perfil.png'></img>
