@@ -1,76 +1,53 @@
 export const projectsData = [
 	{
-		imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
-		title: 'Restaurant',
-		skills: ['React', 'StyledComponents'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
+		imgSrc: 'https://res.cloudinary.com/doublebl/image/upload/v1757639628/portada_reyno_verde_gqwe51.png',
+		title: 'Tienda de Plantas',
+		skills: ['Tailwind','Typescript','Angular', 'CS', 'NET', 'SQL'],
+		descripcion: "Reyno Verde es una aplicación web enfocada en la venta y gestión de plantas. El proyecto ofrece un catálogo variado de plantas, donde los usuarios pueden explorar, elegir y comprar de manera sencilla.",
+		demoURL: 'https://reyno-verde-front-iyvu.vercel.app',
+		repoURL: 'https://github.com/BlackDoubleB/ReynoVerde-Front.git',
 		anim: 'fade-right',
 	},
 	{
-		imgSrc: 'https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/299377097/original/7eb7dcebe244fcf5ad75d92b0969fc116946bd57/create-professional-amd-responsive-wordpress-website.jpg',
-		title: 'E-commerce',
-		skills: ['JavaScript', 'Bootstrap'],
+		imgSrc: 'https://res.cloudinary.com/doublebl/image/upload/v1758577698/favoribooks_gu1lgk.png',
+		title: 'Tienda de Libros',
+		skills: ['Tailwind','Typescript','Angular','Firebase'],
 		descripcion:
-			' Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-up',
-		averageBrightness: 0.1,
+			"FavoriBooks es tu espacio personal para organizar, guardar y descubrir libros. Crea listas privadas con tus títulos favoritos, lleva un control de tus lecturas y explora nuevas recomendaciones para expandir tu colección.",
+		demoURL: 'https://favoribooks.vercel.app',
+		repoURL: 'https://github.com/BlackDoubleB/FavoriBooks.git',
+		anim: 'fade-right',
 	},
+	
 	{
-		imgSrc: 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
+		imgSrc: 'https://res.cloudinary.com/doublebl/image/upload/v1758496346/project-market_omvrcx.png',
+		title: 'Tienda de Variados',
+		skills: ['NextJs', 'Typescript','postgresql'],
 		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://www.corse.mx/cdn/shop/files/tienda_lenceria-lenceria-hot_sale-ofertas-mexico-lenceria_seyx-encaje-corse_mx-corse_lenceria_1200_x_560_px_13.png?v=1712270274&width=1500',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://i0.wp.com/themes.svn.wordpress.org/cafe-cafeteria/1.5.3/screenshot.png',
-		title: 'Coffe Store',
-		skills: ['React', 'CSS'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
-		anim: 'fade-left',
-	},
-	{
-		imgSrc: 'https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2021/06/copy-of-the-6-best-restaurant-website-templates-1.png',
-		title: 'Restaurant',
-		skills: ['React', 'StyledComponents'],
-		descripcion:
-			'Laboris ex laboris mollit esse fugiat aute cillum nostrud enim dolor sit. Reprehenderit et non nulla irure aute nostrud commodo aute.',
-		demoURL: '',
-		repoURL: '',
+			'Market es un panel administrativo para gestionar tu negocio de forma rápida y centralizada. Controla productos, precios, stock y ventas en un solo lugar. Automatiza tareas repetitivas',
+		demoURL: 'https://project-market-pi.vercel.app',
+		repoURL: 'https://github.com/BlackDoubleB/project-market.git',
 		anim: 'fade-right',
 	}
 ];
 
 const skillIcons = {
 	JavaScript: 'skill-icons:javascript',
+	Typescript: 'skill-icons:typescript',
 	React: 'skill-icons:react-dark',
+	Angular: 'skill-icons:angular-dark',
 	Astro: 'skill-icons:astro',
 	CSS: 'skill-icons:css',
 	Sass: 'skill-icons:sass',
 	StyledComponents: 'skill-icons:styledcomponents',
 	Bootstrap: 'skill-icons:bootstrap',
 	Tailwind: 'skill-icons:tailwindcss-dark',
+	CS: 'skill-icons:cs',
+	NET: 'skill-icons:dotnet',
+	SQL: 'vscode-icons:file-type-sql',
+	Firebase:'material-icon-theme:firebase',
+	NextJs: 'skill-icons:nextjs-light',
+	postgresql: 'skill-icons:postgresql-dark',
 };
 
 export const getProjectsData = projectsData.map((item) => {

@@ -5,7 +5,8 @@ import { TitleH3 } from '../atoms/TitleH3';
 export const Projects = () => {
     return(
         <section
-        id="portafolio"
+        
+        id="proyectos"
         className="flex w-full justify-center items-center h-auto min-h-screen
                    2xl:w-[1000px]">
     

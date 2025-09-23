@@ -6,7 +6,7 @@ import {Blog} from '../blog/Blog';
 export const TargetSkills = () => {
     const valores = [
         {accion: 'Descargar CV', icono: '/assets/symbols/download.svg'},
-        {accion: 'Proyectos', icono: '/assets/symbols/work.svg'}
+      
     ];
     return(
         <section className='relative flex flex-col w-full                         
@@ -46,7 +46,6 @@ export const TargetSkills = () => {
                                             2xl:p-10'>
 
                                 <TitleH3 titleH3={"Habilidades"} className="lg:px-5 2xl:px-0"/>
-
                                 <div className='flex justify-center flex-wrap    
                                                 lg:flex lg:justify-center
                                                 xl:flex-nowrap xl:px-5 xl:justify-between
@@ -54,7 +53,7 @@ export const TargetSkills = () => {
                                     {
                                         iconSkill.map((icon, index) => {
                                             return (
-                                                <div className='flex flex-col items-center p-1 xl:p-0'  key={`${icon.pdf}-${index}`} >
+                                                <div className='flex flex-col items-center p-1 xl:p-0'  key={`${icon.descripcion}-${index}`} >
                                                     <div>
                                                         <div className='pb-1'>
                                                             <img 
@@ -65,14 +64,13 @@ export const TargetSkills = () => {
                                                             />
                                                         </div>
 
-                                                        <a href={icon.pdf}></a>
                                                     </div>
                                                     <p className="bg-black rounded-lg font-encode_sans_expanded
                                                                     text-[var(--color-letra-parrafo)]
                                                                     text-center font-[100] px-2
                                                                     md:px-3
                                                                     lg:text-sm
-                                                                    xl:text-base">
+                                                                         xl:text-base">
                                                                     {icon.nombre}
                                                     </p>
                                                 </div>

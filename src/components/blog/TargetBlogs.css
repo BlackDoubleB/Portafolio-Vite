@@ -2,11 +2,19 @@
 	overflow: hidden;
 	border-radius: 22px;
 	position: relative;
+	cursor: pointer;
 }
 
 .card__blog img {
 	object-fit: cover;
 	object-position: center 0;
+	transition: all 0.5s ease-in-out;
+	
+	
+}
+.card__blog:hover img {
+	transform: scale(1.1);
+	
 }
 
 .container-text::-webkit-scrollbar {

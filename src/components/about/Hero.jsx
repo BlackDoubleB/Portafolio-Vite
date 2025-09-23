@@ -4,8 +4,8 @@ export const Hero = () => {
 
 
     return (
-        <section className='w-full min-h-screen 
-                            sm:flex sm:justify-center sm:items-center'>
+        <section id='inicio' className='w-full min-h-screen 
+                            sm:flex sm:justify-center sm:items-center scroll-mt-16'>
             <div className='min-h-screen w-full flex flex-col
                             justify-center items-center
                             sm:w-[483.953px] 

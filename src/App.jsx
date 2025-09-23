@@ -7,9 +7,13 @@ import { FuncionesFlecha } from './components/blog/pages/articulos-js/FuncionesF
 import { MetodoVSFuncion } from './components/blog/pages/articulos-js/MetodoVSFuncion.jsx'
 import {Hoisting} from './components/blog/pages/articulos-js/Hoisting.jsx';
 import { AfterBefore } from "./components/blog/pages/articulos-css/AfterBefore.jsx";
+
+
 function App() {
-  return (
-            <div className="min-h-screen">
+
+  return (  
+            <div className="min-h-screen ">
+             
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Hero/>} />

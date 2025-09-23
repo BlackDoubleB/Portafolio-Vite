@@ -2,8 +2,9 @@ import {Paragraph} from '../../../atoms/Paragraph';
 import { Console } from '../../../atoms/Console';
 import { TitleH3 } from '../../../atoms/TitleH3';
 import { ComTitleBlog,CombDt,CombDd } from '../../../atoms/blog/ComponentsBlog'
+import { ScrollTops } from '../../../scrollTops';
 export const Hoisting = () => {
-
+  ScrollTops();
     return (
         <section className="w-full min-h-screen 
                             sm:flex sm:justify-center sm:items-center

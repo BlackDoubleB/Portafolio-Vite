@@ -24,8 +24,8 @@ export const blogData =[
         descripcion: "Entiende el concepto de hoisting en JavaScript: cómo las declaraciones de variables y funciones son movidas a la parte superior de su ámbito durante la fase de compilación, permitiendo su uso antes de ser definidas."
     },
     {
-        imgSrc: '/assets/blog/articulo1.png',
-		title: 'Los Pseudo Elementos ::after y ::before',
+        imgSrc: '/assets/blog/articulo5.png',
+		title: 'Los Pseudo Elementos',
 		link: '../blog/after-before',
         descripcion: "Descubre los pseudo elementos que nos permitiran generar dos elementos extra que serán hijos del elemento al que se lo apliquemos."
     }

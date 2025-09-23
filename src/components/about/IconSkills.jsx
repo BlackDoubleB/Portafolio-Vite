@@ -1,13 +1,12 @@
 export const iconSkill = [
-    {ruta: "/assets/skills/html.svg", nombre: "Html", pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/css3.svg", nombre: "CSS3",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/javascript.svg", nombre: "Javascript",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/react.svg", nombre: "React",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/astro.svg", nombre: "Astro",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/nextjs.svg", nombre: "NextJS",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/figma.svg", nombre: "Figma",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/.net.svg", nombre: ".NET",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/git.svg", nombre: "Git",pdf: "/docs/cv_jhon_doe.pdf"},
-    {ruta: "/assets/skills/mysql.svg", nombre: "MySQL",pdf: "/docs/cv_jhon_doe.pdf"},
+    { ruta: "/assets/skills/html.svg", nombre: "Html", descripcion: "Lenguaje_de_marcado_para_la_estructura_de_paginas_web" },
+    { ruta: "/assets/skills/css3.svg", nombre: "CSS3", descripcion: "Lenguaje_para_estilos_y_disenio_de_paginas_web" },
+    { ruta: "/assets/skills/javascript.svg", nombre: "Javascript", descripcion: "Lenguaje_de_programacion_para_la_web" },
+    { ruta: "/assets/skills/react.svg", nombre: "React", descripcion: "Libreria_de_JavaScript_para_construir_interfaces_de_usuario" },
+    { ruta: "/assets/skills/angular.svg", nombre: "Angular", descripcion: "Framework_de_JavaScript_para_construir_aplicaciones_web_modernas" },
+    { ruta: "/assets/skills/nextjs.svg", nombre: "NextJS", descripcion: "Framework_de_React_para_aplicaciones_web_modernas" },
+    { ruta: "/assets/skills/figma.svg", nombre: "Figma", descripcion: "Herramienta_de_diseno_de_interfaces_colaborativa" },
+    { ruta: "/assets/skills/.net.svg", nombre: ".NET", descripcion: "Framework_de_Microsoft_para_construir_aplicaciones" },
+    { ruta: "/assets/skills/git.svg", nombre: "Git", descripcion: "Sistema_de_control_de_versiones_para_proyectos" },
+    { ruta: "/assets/skills/mysql.svg", nombre: "MySQL", descripcion: "Sistema_de_gestion_de_bases_de_datos_relacional" },
 ];
-   
