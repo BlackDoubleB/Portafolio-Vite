@@ -1,10 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-bonher_royale: "Bonheur Royale", cursive;
+  --font-encode_sans_expanded: "Encode Sans Expanded", sans-serif;
+}
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -41,8 +44,4 @@ body {
     font-style: normal;
 }
 
-pre{
-    margin: 0 !important;
-    border-radius: 0 0 10px 10px !important;
-}
 

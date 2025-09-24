@@ -3,7 +3,7 @@ import { TargetBlogs } from "./TargetBlogs";
 import { blogData } from "../data/blogData";
 export const Blog = () => {
     return(
-        <section id="blog" className="flex w-full justify-center items-center h-auto min-h-screen
+        <section id="blog" className="flex flex-col w-full justify-center items-center h-auto min-h-screen
                                             md:flex md:justify-start md:items-start
                                             2xl:w-[1000px]">
             <div className="flex flex-col w-auto p-5 

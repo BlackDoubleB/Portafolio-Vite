@@ -1,97 +1,61 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "./About.css";
-
 export const TargetAbout = () => {
   return (
-    <section
-      className="section-about bg-[var(--fondo-pagina)]
-                            flex flex-col justify-center                            
-                            min-h-[calc(100vh-32px)]
-                    
-                            md:w-[250px] md:rounded-[40px] md:border md:border-[--borde] md:sticky
-                            md:top-24
-                            md:flex md:flex-col 
-                            md:items-center md:justify-center 
-                            md:min-h-[calc(100vh-128px)]   
-                                
-                            lg:w-[280px]
-                            xl:w-[380px] 
-                            2xl:w-[410px]"
-    >
-      <div
-        className="m-5 gap-5 
-                                    xs:flex xs:items-center
-                                    md:block md:gap-0
-                                    xl:m-10"
-      >
+    <section className=" max-[400px]:p-5 max-[400px]:border max-[400px]:border-neutral-700 break-all  sm:sticky top-30 sm:p-10 rounded-2xl sm:border-red-50 border h-fit section-about bg-[var(--fondo-pagina)] ">
+      <div className="max-[400px]:flex max-[400px]:items-center max-[400px]:flex-col grid grid-cols-[auto_1fr] sm:flex sm:flex-col gap-5 items-center sm:items-start">
         <h2
-          className="font-bonher_royale text-[var(--color-letra-subtitulo)] 
-                        hidden text-center text-3xl
-                        sm:text-3xl
-                        md:text-4xl md:pb-5 md:block
-                        2xl:text-[2.875rem] 2xl:pb-10"
+          className=" col-span-2 col-start-1 font-bonher_royale text-[var(--color-letra-subtitulo)] 
+                     text-3xl 2xl:text-5xl"
         >
           Reyna Blacido Aparicio
         </h2>
 
-        <div>
-          <h2
-            className="font-bonher_royale text-[var(--color-letra-subtitulo)]
-                                            text-center text-3xl pb-5
-                                            md:hidden"
-          >
-            Reyna Blacido Aparicio
-          </h2>
+        <div className="min-[400px]:self-start">
           <img
-            className="rounded-[40px] object-cover
-                                            w-[350px] h-[350px] 	
-                                            sm:w-[250px] sm:h-[250px]
-                                            md:w-auto md:h-auto"
+            className="rounded-3xl object-cover aspect-3/3 max-w-40 w-full sm:h-52 sm:w-52"
             src="/assets/perfil.png"
           ></img>
         </div>
 
-        <div className="flex flex-col justify-center gap-[10px]">
-          <div className="pt-10">
-            <h4 className="font-encode_sans_expanded font-[100] text-[var(--color-letra-subtitulo)] text-[1rem]">
+        <div className=" flex flex-col justify-center gap-[10px] text-xs sm:text-base">
+          <div className="">
+            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] ">
               Telefono:
             </h4>
             <p
-              className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
-                                text-base
-                                md:tex-lg"
+              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
+                                "
             >
               +51 910 045 824
             </p>
           </div>
 
           <div>
-            <h4 className="font-encode_sans_expanded font-[100] text-[var(--color-letra-subtitulo)] text-[1rem]">
+            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] ">
               Correo:
             </h4>
             <p
-              className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
-                                text-base
-                                md:tex-lg"
+              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
+                                "
             >
               blancablacido@gmail.com
             </p>
           </div>
 
           <div>
-            <h4 className="font-encode_sans_expanded font-[100] text-[var(--color-letra-subtitulo)] text-[1rem]">
+            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)]">
               Localidad:
             </h4>
             <p
-              className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
-                                text-base
-                                md:tex-lg"
+              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
+                                "
             >
               Lima - Perú
             </p>
           </div>
           <div className="flex flex-col">
-            <h4 className="font-encode_sans_expanded font-[100] text-[var(--color-letra-subtitulo)] text-[1rem]">
+            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)]">
               Contacto:
             </h4>
             <div className="flex gap-5 pt-1">

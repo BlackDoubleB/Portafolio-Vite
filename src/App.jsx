@@ -15,7 +15,8 @@ function App() {
             <div className="min-h-screen ">
              
                 <Navbar />
-                <Routes>
+               <main className="w-full flex justify-center">
+                 <Routes >
                     <Route path="/" element={<Hero/>} />
                     <Route path="/blog/tipos-variables" element={<TiposVariables/>} />
                     <Route path="/blog/funciones-flecha" element={<FuncionesFlecha/>} />
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/blog/hoisting" element={<Hoisting/>} />
                     <Route path="/blog/after-before" element={<AfterBefore/>} />
                 </Routes>
+               </main>
             </div>
   )
 }
