@@ -10,44 +10,35 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav
-      className="bg-[#A59BCD] w-full h-8 flex
-                        md:h-16 sticky top-0  z-20 "
-    >
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="flex h-8 md:h-16 items-center justify-between">
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
-              <Icon
-                icon="pixelarticons:code"
-                className="w-10 h-10 text-white"
-              />
-            </div>
+    <nav className="bg-[#A59BCD] w-full
+                      sticky top-0 z-20 flex justify-center font-medium text-amber-50 ">
+      <div className="flex justify-center sm:justify-between max-w-[1200px] w-full items-center max-[400px]:py-1 py-2 mx-5 sm:mx-10">
+        <div className="">
+          <Icon icon="pixelarticons:code" className="w-10 h-10 text-white" />
+        </div>
 
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {enlaces.map((enlace, index) => {
-                  return enlace.link.startsWith("/#") ? (
-                    <HashLink
-                      key={index}
-                      to={enlace.link}
-                      className="text-base rounded-2xl font-medium text-[--color-letra-parrafo] hover:bg-[#9287bf] px-6 py-2"
-                    >
-                      {enlace.titulo}
-                    </HashLink>
-                  ) : (
-                    <Link
-                      key={index}
-                      to={enlace.link}
-                      className="text-base rounded-2xl font-medium text-[--color-letra-parrafo] hover:bg-[#9287bf] px-6 py-2"
-                    >
-                      {enlace.titulo}
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+        <div className=" gap-10 hidden sm:flex">
+         
+            {enlaces.map((enlace, index) => {
+              return enlace.link.startsWith("/#") ? (
+                <HashLink
+                  key={index}
+                  to={enlace.link}
+                  className="text-[--color-letra-parrafo] hover:bg-[#9287bf54] px-4 py-2 rounded-2xl duration-300 ease-in-out"
+                >
+                  {enlace.titulo}
+                </HashLink>
+              ) : (
+                <Link
+                  key={index}
+                  to={enlace.link}
+                  className="text-[--color-letra-parrafo] hover:bg-[#9287bf54] px-4 py-2 rounded-2xl duration-300 ease-in-out"
+                >
+                  {enlace.titulo}
+                </Link>
+              );
+            })}
+      
         </div>
       </div>
     </nav>

@@ -1,30 +1,41 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "./About.css";
+import { CompButton } from "../atoms/button";
 export const TargetAbout = () => {
+  const valores = [
+    { accion: "Descargar CV", icono: "/assets/symbols/download.svg" },
+  ];
   return (
-    <section className=" max-[400px]:p-5 max-[400px]:border max-[400px]:border-neutral-700 break-all  sm:sticky top-30 sm:p-10 rounded-2xl sm:border-red-50 border h-fit section-about bg-[var(--fondo-pagina)] ">
-      <div className="max-[400px]:flex max-[400px]:items-center max-[400px]:flex-col grid grid-cols-[auto_1fr] sm:flex sm:flex-col gap-5 items-center sm:items-start">
+    <section
+      className=" max-[400px]:p-5 border-[0.1px] border-neutral-700 max-[400px]:break-all 
+                        p-2.5  rounded-2xl  top-10 sm:top-20 lg:top-30 
+                       sm:sticky sm:p-10 shadow-lg shadow-neutral-600/50"
+    >
+      <div
+        className=" 
+                      max-[400px]:flex max-[400px]:items-center max-[400px]:flex-col 
+                      grid grid-cols-[auto_1fr] max-[400px]:p-0 p-5 sm:p-0 sm:flex sm:flex-col gap-5 items-center sm:items-start md:items-center"
+      >
         <h2
-          className=" col-span-2 col-start-1 font-bonher_royale text-[var(--color-letra-subtitulo)] 
-                     text-3xl 2xl:text-5xl"
+          className="max-[400px]:text-2xl col-span-2 col-start-1 font-bonher_royale text-[var(--color-letra-subtitulo)] 
+                     text-4xl 2xl:text-5xl  text-center 2xl:text-nowrap"
         >
-          Reyna Blacido Aparicio
+          Reyna Blacido
         </h2>
 
-        <div className="min-[400px]:self-start">
+        <div className="min-[400px]:self-start mx-auto ">
           <img
-            className="rounded-3xl object-cover aspect-3/3 max-w-40 w-full sm:h-52 sm:w-52"
+            className="rounded-md object-cover aspect-2/2 max-w-40 w-full sm:h-52 sm:max-w-52"
             src="/assets/perfil.png"
           ></img>
         </div>
 
-        <div className=" flex flex-col justify-center gap-[10px] text-xs sm:text-base">
-          <div className="">
-            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] ">
-              Telefono:
-            </h4>
+        <div className=" flex flex-col justify-center text-center items-center gap-[10px] text-xs sm:text-xs md:text-base lg:text-lg">
+         
+          <div>
+            <h4 className=" text-[var(--color-letra-subtitulo)] ">Telefono:</h4>
             <p
-              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
+              className=" text-[var(--color-letra-parrafo)]
                                 "
             >
               +51 910 045 824
@@ -32,32 +43,25 @@ export const TargetAbout = () => {
           </div>
 
           <div>
-            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] ">
-              Correo:
-            </h4>
+            <h4 className="text-[var(--color-letra-subtitulo)] ">Correo:</h4>
             <p
-              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
-                                "
+              className="text-[var(--color-letra-parrafo)]"
             >
               blancablacido@gmail.com
             </p>
           </div>
 
           <div>
-            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)]">
-              Localidad:
-            </h4>
+            <h4 className=" text-[var(--color-letra-subtitulo)]">Localidad:</h4>
             <p
-              className="font-encode_sans_expanded text-[var(--color-letra-parrafo)]
-                                "
+              className=" text-[var(--color-letra-parrafo)]"
             >
               Lima - Perú
             </p>
           </div>
-          <div className="flex flex-col">
-            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)]">
-              Contacto:
-            </h4>
+
+          <div className="flex flex-col items-center">
+            <h4 className=" text-[var(--color-letra-subtitulo)]">Contacto:</h4>
             <div className="flex gap-5 pt-1">
               <a
                 href="https://github.com/BlackDoubleB"
@@ -77,11 +81,16 @@ export const TargetAbout = () => {
               >
                 <Icon
                   icon="devicon:linkedin"
-                  className="w-6 h-6 text-blue-700 cursor-pointer bg-white rounded-sm"
+                  className="w-6 h-6 cursor-pointer bg-white rounded-sm"
                 />
               </a>
             </div>
           </div>
+
+          <div className="pt-5 mx-auto">
+            <CompButton valores={valores} />
+          </div>
+
         </div>
       </div>
     </section>

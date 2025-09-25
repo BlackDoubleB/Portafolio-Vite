@@ -1,6 +1,4 @@
 .card__portfolio {
-	/* width: 332px;
-	height: 246px; */
 	overflow: hidden;
 	border-radius: 22px;
 	background: #ffffff;
@@ -10,8 +8,6 @@
 .card__portfolio img {
 	object-fit: cover;
 	object-position: center 0;
-	/* height: 160px;
-	width: 332px; */
 	background: #000000;
 }
 
@@ -25,7 +21,7 @@
 	transition: 0.35s;
 	background: #00000086;
 	transform: translateY(63%);
-	padding-top: 15px;
+	padding-top:1px;
 	transition-property: transform, padding-top;
 	color: var(--on-primary);
 }

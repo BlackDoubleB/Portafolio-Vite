@@ -12,11 +12,12 @@ import { AfterBefore } from "./components/blog/pages/articulos-css/AfterBefore.j
 function App() {
 
   return (  
-            <div className="min-h-screen ">
+            <div className="min-h-screen flex flex-col flex-1 items-center ">
              
                 <Navbar />
-               <main className="w-full flex justify-center">
-                 <Routes >
+               <main className="max-w-[1200px] mx-5 sm:mx-10">
+             
+                   <Routes >
                     <Route path="/" element={<Hero/>} />
                     <Route path="/blog/tipos-variables" element={<TiposVariables/>} />
                     <Route path="/blog/funciones-flecha" element={<FuncionesFlecha/>} />
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/blog/hoisting" element={<Hoisting/>} />
                     <Route path="/blog/after-before" element={<AfterBefore/>} />
                 </Routes>
+              
                </main>
             </div>
   )
