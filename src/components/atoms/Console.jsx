@@ -1,17 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
-import Prism from 'prismjs';
-import 'prism-themes/themes/prism-dracula.css';
+import {  useRef, useState } from 'react';
 import { Icon } from '@iconify/react';
 import PropTypes from 'prop-types';
+
 
 export const Console = ({ script, language }) => {
     const codeRef = useRef(null);
     const [icon, setIcon] = useState("uil:copy");
     const [copied, setCopied] = useState("Copiar");
 
-    useEffect(() => {
-        Prism.highlightAll();
-    }, []);
+   
 
     function handleClickCambio() {
         (setCopied("¡Copiado!"));
@@ -29,7 +26,7 @@ export const Console = ({ script, language }) => {
     }, 2500);
 
     return (
-        <div className='container-console py-2'>
+        <div className='w-full'>
             <div className='flex justify-end bg-[var(--nav-terminal)] w-full rounded-t-xl px-4 py-2'>
 
                 <div onClick={handleClick} className='flex items-center hover:cursor-pointer gap-2'>
@@ -42,11 +39,15 @@ export const Console = ({ script, language }) => {
                 </div>
 
             </div>
-            <pre>
-                <code ref={codeRef} className={language}>
-                    {script}
-                </code>
-            </pre>
+            <div className='grid'>
+                <pre className='p-5 bg-neutral-700 overflow-x-auto'>
+                    <code ref={codeRef} className={`${language} block whitespace-pre`}>
+                        {script}
+                    </code>
+                </pre>
+            </div>
+           
+
         </div>
     );
 }
@@ -55,3 +56,4 @@ Console.propTypes = {
     script: PropTypes.string.isRequired,
     language:PropTypes.string.isRequired
 }
+

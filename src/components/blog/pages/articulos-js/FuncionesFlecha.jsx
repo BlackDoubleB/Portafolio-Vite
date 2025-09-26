@@ -13,10 +13,7 @@ export const FuncionesFlecha = () => {
   ScrollTops();
   return (
     <section
-      className="w-full min-h-screen 
-                            sm:flex sm:justify-center sm:items-center
-                            py-5 
-                            md:my-10"
+      className="break-all"
     >
       <div
         className="min-h-screen w-full flex flex-col 

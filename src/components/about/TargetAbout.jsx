@@ -30,7 +30,7 @@ export const TargetAbout = () => {
           ></img>
         </div>
 
-        <div className=" flex flex-col justify-center text-center items-center gap-[10px] text-xs sm:text-xs md:text-base lg:text-lg">
+        <div className=" flex flex-col justify-center text-center items-center gap-[10px] text-base lg:text-lg">
          
           <div>
             <h4 className=" text-[var(--color-letra-subtitulo)] ">Telefono:</h4>
@@ -88,7 +88,9 @@ export const TargetAbout = () => {
           </div>
 
           <div className="pt-5 mx-auto">
-            <CompButton valores={valores} />
+            <a href="/public/assets/cv_reynablacidoaparicio.pdf" download>
+              <CompButton valores={valores} />
+            </a>
           </div>
 
         </div>

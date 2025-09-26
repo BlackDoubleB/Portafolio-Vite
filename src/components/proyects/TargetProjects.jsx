@@ -13,11 +13,9 @@ export const TargetProjects = ({title, descripcion, imgSrc, skills,repoURL,demoU
         <img
             src={imgSrc}
             alt={title}
-            loading="lazy"
-            
         />
 
-        <div className="descripcion__container">
+         <div className="descripcion__container">
             <h2 className="card__title">{title}</h2>
             <div className="descripcion">
                 <p>{descripcion}</p>
@@ -31,14 +29,14 @@ export const TargetProjects = ({title, descripcion, imgSrc, skills,repoURL,demoU
                 </div>
 
                 <div className="buttons">
-                    <a className="github"  href={repoURL}>
+                    <a className="github"  href={repoURL} target="_blank">
                         <span>
                             Github
                             {(<Icon icon="quill:link-out" />)}
                         </span>
                     </a>
 
-                    <a className="demo" href={demoURL}>
+                    <a className="demo" href={demoURL} target="_blank">
                         <span>
                             Demo
                             {(<Icon icon="quill:link-out" />)}
@@ -46,7 +44,7 @@ export const TargetProjects = ({title, descripcion, imgSrc, skills,repoURL,demoU
                     </a>
                 </div>
             </div>
-        </div>
+        </div> 
 </div>
 
     );

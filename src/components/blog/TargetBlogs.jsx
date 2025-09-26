@@ -4,25 +4,32 @@ import propTypes from "prop-types";
 
 export const TargetBlogs = ({ title, imgSrc, link, descripcion }) => {
   return (
-    <Link to={link}>
-      <div className="w-full aspect-3/2                     
+    <Link to={link} className="group max-lg:w-full">
+      <div
+        className="w-full aspect-video                   
                       lg:w-[300px] lg:h-[190px]
                       xl:w-[350px] xl:h-[240px]
-                      rounded-3xl overflow-hidden border-[0.1px] border-neutral-700 relative ">
-        <img src={imgSrc} alt={title} loading="lazy" className="object-cover" />
-        <div className="absolute z-10 bottom-0  bg-neutral-700/95 w-full h-30 overflow-hidden">
-          <div className="absolute bottom-5 mx-5 h-20 overflow-hidden">
+                      rounded-3xl  border-[0.1px] border-neutral-700 relative overflow-hidden"
+      >
+        <img
+          src={imgSrc}
+          alt={title}
+          loading="lazy"
+          className="object-cover group-hover:scale-110 duration-300 ease-in-out absolute -top-2"
+        />
+        <div className="absolute z-10 bottom-0  bg-neutral-950/95 w-full h-5/12 overflow-hidden flex items-center">
+          <div className="  overflow-hidden h-8/12 mx-5">
             <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] text-[1rem] bold font-bold">
-            {title}
-          </h4>
+              {title}
+            </h4>
 
-          <p
-            className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
+            <p
+              className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]
                                 text-base
-                                md:tex-lg line-clamp-2"
-          >
-            {descripcion}
-          </p>
+                                md:tex-lg line-clamp-1 sm:line-clamp-2"
+            >
+              {descripcion}
+            </p>
           </div>
         </div>
       </div>

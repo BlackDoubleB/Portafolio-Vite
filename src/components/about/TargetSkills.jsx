@@ -6,7 +6,7 @@ import { Blog } from "../blog/Blog";
 export const TargetSkills = () => {
  
   return (
-    <section className="max-[400px]:break-all relative flex flex-col gap-10 sm:gap-28 w-full pt-12 lg:pt-20">
+    <section className="max-[400px]:break-all relative flex flex-col gap-5 sm:gap-10 xl:gap-28 w-full pt-12 lg:pt-20">
       
      
         <div className=" flex flex-col gap-5 lg:gap-10 2xl:gap-14">
@@ -16,7 +16,7 @@ export const TargetSkills = () => {
           <div className="sm:hidden ">
             <TargetAbout />
           </div>
-          <p className=" font-encode_sans_expanded font-thin text-[var(--color-letra-parrafo)] text-xs sm:text-xs md:text-base lg:text-lg">
+          <p className=" font-encode_sans_expanded font-thin text-[var(--color-letra-parrafo)] text-base lg:text-lg">
             Apasionada por crear interfaces elegantes y funcionales. Me encanta
             aprender nuevas tecnologías y colaborar en proyectos desafiantes.
           </p>
@@ -42,7 +42,7 @@ export const TargetSkills = () => {
                     </div>
                   </div>
                   <p
-                    className="text-xs sm:text-xs md:text-base lg:text-lg"
+                    className="text-base lg:text-lg"
                   >
                     {icon.nombre}
                   </p>

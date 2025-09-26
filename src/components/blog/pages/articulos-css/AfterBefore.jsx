@@ -6,22 +6,9 @@ import { ScrollTops } from "../../../scrollTops";
 export const AfterBefore = () => {
   ScrollTops();
   return (
-    <section
-      className="w-full min-h-screen 
-                            sm:flex sm:justify-center sm:items-center
-                            py-5 
-                            md:my-10"
-    >
-      <div
-        className="min-h-screen w-full flex flex-col 
-                            justify-center items-center px-5
-                            sm:w-[483.953px] sm:px-0
-                            md:w-[730px] md:px-0 md:gap-[5px] md:flex md:flex-row md:items-start
-                            lg:w-[990px] lg:gap-[10px]
-                            xl:w-[1200px] xl:gap-[20px] 
-                            2xl:w-[1440px] 2xl:gap-[30px] 2xl:flex 2xl:justify-center 2xl:items-start"
-      >
-        <div className="w-full 2xl:px-10">
+    <section className="break-all">
+     
+        <div className="">
           <ComTitleBlog tituloBlog={"AFTER Y BEFORE"} />
           <Paragraph>
             Estos son los pseudo elementos más usados en CSS, nos permiten
@@ -59,7 +46,8 @@ export const AfterBefore = () => {
             <br />
             <br />
             <strong>Revisa el ejemplo que hice:</strong>
-            <Console
+           <div className="flex justify-center w-full h-full">
+             <Console
               language="language-html"
               script={`<body>
     <h1>
@@ -72,7 +60,8 @@ export const AfterBefore = () => {
     </p>
 </body>`}
             />
-            <Console
+           </div> 
+            {/* <Console
               language="language-css"
               script={`:root{
             --nada: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -101,10 +90,10 @@ export const AfterBefore = () => {
             background-color: red;
             clip-path: var(--todo);
         }`}
-            />
+            /> */}
           </Paragraph>
         </div>
-      </div>
+    
     </section>
   );
 };

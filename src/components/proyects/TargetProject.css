@@ -95,7 +95,7 @@
 .card__portfolio .skills {
 	display: flex;
 	gap: 10px;
-	font-size: 3rem; /* Estamos usando rem para los textos */
+	font-size: 2rem; /* Estamos usando rem para los textos */
 }
 
 .card__portfolio .buttons {
