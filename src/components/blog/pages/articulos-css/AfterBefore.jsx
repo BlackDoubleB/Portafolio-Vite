@@ -6,9 +6,8 @@ import { ScrollTops } from "../../../scrollTops";
 export const AfterBefore = () => {
   ScrollTops();
   return (
-    <section className="break-all">
-     
-        <div className="">
+    <section>
+        <div>
           <ComTitleBlog tituloBlog={"AFTER Y BEFORE"} />
           <Paragraph>
             Estos son los pseudo elementos más usados en CSS, nos permiten
@@ -61,7 +60,7 @@ export const AfterBefore = () => {
 </body>`}
             />
            </div> 
-            {/* <Console
+            <Console
               language="language-css"
               script={`:root{
             --nada: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -90,10 +89,9 @@ export const AfterBefore = () => {
             background-color: red;
             clip-path: var(--todo);
         }`}
-            /> */}
+            />
           </Paragraph>
         </div>
-    
     </section>
   );
 };

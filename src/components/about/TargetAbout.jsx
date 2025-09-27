@@ -7,7 +7,7 @@ export const TargetAbout = () => {
   ];
   return (
     <section
-      className=" max-[400px]:p-5 border-[0.1px] border-neutral-700 max-[400px]:break-all 
+      className=" max-[400px]:p-5 border-[0.1px] border-neutral-700  
                         p-2.5  rounded-2xl  top-10 sm:top-20 lg:top-30 
                        sm:sticky sm:p-10 shadow-lg shadow-neutral-600/50"
     >

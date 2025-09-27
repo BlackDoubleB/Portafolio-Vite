@@ -6,9 +6,7 @@ import { Blog } from "../blog/Blog";
 export const TargetSkills = () => {
  
   return (
-    <section className="max-[400px]:break-all relative flex flex-col gap-5 sm:gap-10 xl:gap-28 w-full pt-12 lg:pt-20">
-      
-     
+    <section className="relative flex flex-col gap-5 sm:gap-10 xl:gap-28 w-full pt-12 lg:pt-20">
         <div className=" flex flex-col gap-5 lg:gap-10 2xl:gap-14">
           <h1 className="degradado text-center sm:text-start max-[400px]:text-xl text-3xl  lg:text-5xl 2xl:text-6xl">
             DESARROLLADORA <br className=""/> FULL-STACK

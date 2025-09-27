@@ -12,19 +12,8 @@ import { ScrollTops } from "../../../scrollTops";
 export const FuncionesFlecha = () => {
   ScrollTops();
   return (
-    <section
-      className="break-all"
-    >
-      <div
-        className="min-h-screen w-full flex flex-col 
-                            justify-center items-center px-5
-                            sm:w-[483.953px] sm:px-0
-                            md:w-[730px] md:px-0 md:gap-[5px] md:flex md:flex-row md:items-start
-                            lg:w-[990px] lg:gap-[10px]
-                            xl:w-[1200px] xl:gap-[20px] 
-                            2xl:w-[1440px] 2xl:gap-[30px] 2xl:flex 2xl:justify-center 2xl:items-start"
-      >
-        <div className="w-full 2xl:px-10">
+    <section>
+        <div>
           <ComTitleBlog tituloBlog={"FUNCIONES FLECHA"} />
           <Paragraph>
             Son una forma compacta de escribir funciones, introducida en ES6. Su
@@ -162,7 +151,6 @@ console.log(doble(5)); // Imprime: 10`}
             </div>
           </Paragraph>
         </div>
-      </div>
     </section>
   );
 };

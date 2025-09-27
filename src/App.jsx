@@ -10,7 +10,7 @@ import { AfterBefore } from "./components/blog/pages/articulos-css/AfterBefore.j
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col flex-1 items-center ">
+    <div className="min-h-screen flex flex-col flex-1 items-center max-[400px]:break-all">
       <Navbar />
       <main className="max-w-[1200px] mx-5 sm:mx-10 flex-1 mb-10">
         <Routes>

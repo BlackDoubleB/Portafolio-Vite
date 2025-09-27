@@ -8,7 +8,6 @@ export const TargetProjects = ({title, descripcion, imgSrc, skills,repoURL,demoU
         <div className="card__portfolio
                         lg:w-[300px] lg:h-[190px]
                         xl:w-[350px] xl:h-[240px]
-                      
                         border-[0.1px] border-neutral-700">
         <img
             src={imgSrc}
