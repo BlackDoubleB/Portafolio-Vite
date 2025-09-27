@@ -89,7 +89,7 @@ export const TargetAbout = () => {
 
           <div className="pt-5 mx-auto">
             <a
-              href="/public/assets/cv_reynablacidoaparicio.pdf"
+              href="/cv_reynablacidoaparicio.pdf"
               aria-label="Descargar CV de Reyna Blacido"
               download
             >
