@@ -19,9 +19,9 @@ export const TargetBlogs = ({ title, imgSrc, link, descripcion }) => {
         />
         <div className="absolute z-10 bottom-0  bg-neutral-950/95 w-full h-5/12 overflow-hidden flex items-center">
           <div className="  overflow-hidden h-8/12 mx-5">
-            <h4 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] text-[1rem] bold font-bold">
+            <h2 className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] text-[1rem] bold font-bold">
               {title}
-            </h4>
+            </h2>
 
             <p
               className="font-encode_sans_expanded font-[100] text-[var(--color-letra-parrafo)]

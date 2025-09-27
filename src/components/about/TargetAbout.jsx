@@ -3,7 +3,11 @@ import "./About.css";
 import { CompButton } from "../atoms/button";
 export const TargetAbout = () => {
   const valores = [
-    { accion: "Descargar CV", icono: "/assets/symbols/download.svg", alt:"Icono descargar cv" },
+    {
+      accion: "Descargar CV",
+      icono: "/assets/symbols/download.svg",
+      alt: "Icono descargar cv",
+    },
   ];
   return (
     <section
@@ -32,7 +36,6 @@ export const TargetAbout = () => {
         </div>
 
         <div className=" flex flex-col justify-center text-center items-center gap-[10px] text-base lg:text-lg">
-         
           <div>
             <h3 className=" text-[var(--color-letra-subtitulo)] ">Telefono:</h3>
             <p
@@ -45,20 +48,14 @@ export const TargetAbout = () => {
 
           <div>
             <h3 className="text-[var(--color-letra-subtitulo)] ">Correo:</h3>
-            <p
-              className="text-[var(--color-letra-parrafo)]"
-            >
+            <p className="text-[var(--color-letra-parrafo)]">
               blancablacido@gmail.com
             </p>
           </div>
 
           <div>
             <h3 className=" text-[var(--color-letra-subtitulo)]">Localidad:</h3>
-            <p
-              className=" text-[var(--color-letra-parrafo)]"
-            >
-              Lima - Perú
-            </p>
+            <p className=" text-[var(--color-letra-parrafo)]">Lima - Perú</p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -68,7 +65,7 @@ export const TargetAbout = () => {
                 href="https://github.com/BlackDoubleB"
                 target="_blank"
                 rel="noopener noreferrer"
-                 alt="GitHub de Reyna Blacido"
+                aria-label="GitHub de Reyna Blacido"
               >
                 <Icon
                   icon="devicon:github"
@@ -80,22 +77,25 @@ export const TargetAbout = () => {
                 href="https://www.linkedin.com/in/reyna-blacido-aparicio-a03558290"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn de Reyna Blacido"
               >
                 <Icon
                   icon="devicon:linkedin"
                   className="w-6 h-6 cursor-pointer bg-white rounded-sm"
-                   alt="Linkedin de Reyna Blacido"
                 />
               </a>
             </div>
           </div>
 
           <div className="pt-5 mx-auto">
-            <a href="/public/assets/cv_reynablacidoaparicio.pdf" download>
+            <a
+              href="/public/assets/cv_reynablacidoaparicio.pdf"
+              aria-label="Descargar CV de Reyna Blacido"
+              download
+            >
               <CompButton valores={valores} />
             </a>
           </div>
-
         </div>
       </div>
     </section>
