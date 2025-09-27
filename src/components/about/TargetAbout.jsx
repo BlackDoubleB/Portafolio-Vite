@@ -26,7 +26,7 @@ export const TargetAbout = () => {
         <div className="min-[400px]:self-start mx-auto ">
           <img
             className="rounded-md object-cover aspect-2/2 max-w-40 w-full sm:h-52 sm:max-w-52"
-            src="/assets/perfil.png"
+            src="/assets/general/perfil.png"
           ></img>
         </div>
 
