@@ -1,5 +1,5 @@
 import { iconSkill } from "./IconSkills";
-import { TitleH3 } from "../atoms/TitleH3";
+import { TitleH2 } from "../atoms/TitleH2";
 import { TargetAbout } from "./TargetAbout";
 import { Projects } from "../proyects/Projects";
 import { Blog } from "../blog/Blog";
@@ -21,7 +21,7 @@ export const TargetSkills = () => {
         </div>
 
         <div className="flex flex-col gap-10">
-          <TitleH3 titleH3={"Habilidades"} />
+          <TitleH2 titleH2={"Habilidades"} />
           <div className="flex gap-5 flex-wrap 2xl:justify-between justify-center">
             {iconSkill.map((icon, index) => {
               return (
@@ -33,6 +33,7 @@ export const TargetSkills = () => {
                     <div className="">
                       <img
                         src={icon.ruta}
+                        alt={icon.descripcion}
                         className="w-9 h-9
                                      lg:w-12 lg:h-12
                                      xl:w-16 xl:h-16"

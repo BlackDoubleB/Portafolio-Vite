@@ -27,13 +27,14 @@ export const TargetAbout = () => {
           <img
             className="rounded-md object-cover aspect-2/2 max-w-40 w-full sm:h-52 sm:max-w-52"
             src="/assets/general/perfil.png"
+            alt="Foto perfil de Reyna Blacido"
           ></img>
         </div>
 
         <div className=" flex flex-col justify-center text-center items-center gap-[10px] text-base lg:text-lg">
          
           <div>
-            <h4 className=" text-[var(--color-letra-subtitulo)] ">Telefono:</h4>
+            <h3 className=" text-[var(--color-letra-subtitulo)] ">Telefono:</h3>
             <p
               className=" text-[var(--color-letra-parrafo)]
                                 "
@@ -43,7 +44,7 @@ export const TargetAbout = () => {
           </div>
 
           <div>
-            <h4 className="text-[var(--color-letra-subtitulo)] ">Correo:</h4>
+            <h3 className="text-[var(--color-letra-subtitulo)] ">Correo:</h3>
             <p
               className="text-[var(--color-letra-parrafo)]"
             >
@@ -52,7 +53,7 @@ export const TargetAbout = () => {
           </div>
 
           <div>
-            <h4 className=" text-[var(--color-letra-subtitulo)]">Localidad:</h4>
+            <h3 className=" text-[var(--color-letra-subtitulo)]">Localidad:</h3>
             <p
               className=" text-[var(--color-letra-parrafo)]"
             >
@@ -61,12 +62,13 @@ export const TargetAbout = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <h4 className=" text-[var(--color-letra-subtitulo)]">Contacto:</h4>
+            <h3 className=" text-[var(--color-letra-subtitulo)]">Contacto:</h3>
             <div className="flex gap-5 pt-1">
               <a
                 href="https://github.com/BlackDoubleB"
                 target="_blank"
                 rel="noopener noreferrer"
+                 alt="GitHub de Reyna Blacido"
               >
                 <Icon
                   icon="devicon:github"
@@ -82,6 +84,7 @@ export const TargetAbout = () => {
                 <Icon
                   icon="devicon:linkedin"
                   className="w-6 h-6 cursor-pointer bg-white rounded-sm"
+                   alt="Linkedin de Reyna Blacido"
                 />
               </a>
             </div>

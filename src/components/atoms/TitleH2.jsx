@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-export const TitleH3 = ({ titleH3, className = null }) => {
+export const TitleH2 = ({ titleH2, className = null }) => {
   return (
-    <h3
+    <h2
       className={`font-encode_sans_expanded font-[900] degradado 
                                        text-xl
                                        sm:text-2xl 
@@ -9,12 +9,12 @@ export const TitleH3 = ({ titleH3, className = null }) => {
                                        ${className}
                                        xl:text-4xl`}
     >
-      {titleH3}
-    </h3>
+      {titleH2}
+    </h2>
   );
 };
 
-TitleH3.propTypes = {
-  titleH3: PropTypes.string.isRequired,
+TitleH2.propTypes = {
+  titleH2: PropTypes.string.isRequired,
   className: PropTypes.string,
 };

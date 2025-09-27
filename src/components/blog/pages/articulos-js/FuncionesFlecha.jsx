@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 
-import { TitleH3 } from "../../../atoms/TitleH3";
+import { TitleH2 } from "../../../atoms/TitleH2";
 import { Console } from "../../../atoms/Console";
 import { Paragraph } from "../../../atoms/Paragraph";
 import {
@@ -21,8 +21,8 @@ export const FuncionesFlecha = () => {
             las funciones tradicionales, especialmente en el manejo de this.
           </Paragraph>
 
-          <TitleH3
-            titleH3={`Tipos principales de funciones flecha`}
+          <TitleH2
+            titleH2={`Tipos principales de funciones flecha`}
             className="text-cyan-50"
           />
           <dl>
@@ -117,7 +117,7 @@ console.log(doble(5)); // Imprime: 10`}
             </CombDd>
           </dl>
 
-          <TitleH3 titleH3={`Ventajas de las Funciones Flecha`} />
+          <TitleH2 titleH2={`Ventajas de las Funciones Flecha`} />
           <Paragraph>
             <div className="flex gap-2">
               <Icon

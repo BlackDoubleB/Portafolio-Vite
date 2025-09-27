@@ -1,4 +1,4 @@
-import { TitleH3 } from "../../../atoms/TitleH3";
+import { TitleH2 } from "../../../atoms/TitleH2";
 import { Console } from "../../../atoms/Console";
 import {
   ComTitleBlog,
@@ -13,7 +13,7 @@ export const TiposVariables = () => {
         <div>
           <ComTitleBlog tituloBlog={"VAR-CONST-LET"} />
 
-          <TitleH3 titleH3={"Alcance (Scope)"} className="text-cyan-50" />
+          <TitleH2 titleH2={"Alcance (Scope)"} className="text-cyan-50" />
           <dl>
             <CombDt combDt={"1- VAR :"} />
             <CombDd>
@@ -37,7 +37,7 @@ export const TiposVariables = () => {
             </CombDd>
           </dl>
 
-          <TitleH3 titleH3={"Reasignación"} className="text-cyan-50" />
+          <TitleH2 titleH2={"Reasignación"} className="text-cyan-50" />
           <dl>
             <CombDt combDt={"1- VAR :"} />
             <CombDd>
@@ -82,8 +82,8 @@ obj = {}; // Error: Assignment to constant variable`}
             </CombDd>
           </dl>
 
-          <TitleH3
-            titleH3={`Redefinición(Redeclarar la misma variable) en el mismo contexto`}
+          <TitleH2
+            titleH2={`Redefinición(Redeclarar la misma variable) en el mismo contexto`}
             className="text-cyan-50"
           />
           <dl>

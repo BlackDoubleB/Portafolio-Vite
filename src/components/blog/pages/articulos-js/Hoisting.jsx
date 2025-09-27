@@ -1,6 +1,6 @@
 import {Paragraph} from '../../../atoms/Paragraph';
 import { Console } from '../../../atoms/Console';
-import { TitleH3 } from '../../../atoms/TitleH3';
+import { TitleH2 } from '../../../atoms/TitleH2';
 import { ComTitleBlog,CombDt,CombDd } from '../../../atoms/blog/ComponentsBlog'
 import { ScrollTops } from '../../../scrollTops';
 export const Hoisting = () => {
@@ -10,7 +10,7 @@ export const Hoisting = () => {
                 <div>
 
                 <ComTitleBlog tituloBlog={"HOISTING"}/>
-                    <TitleH3 titleH3={"VAR"}/>
+                    <TitleH2 titleH2={"VAR"}/>
                     <dl>
                         <CombDt combDt={`Hoisting con VAR en Condicionales y Bloques:`}/>
                         <CombDd className="!px-0">
@@ -41,7 +41,7 @@ ejemplo();
                        </CombDd >
                     </dl>
 
-                    <TitleH3 titleH3={"LET Y CONST"}/>
+                    <TitleH2 titleH2={"LET Y CONST"}/>
                     <dl>
                         <CombDd className="!px-0">
                         En ECMAScript 2015 (ES6), las variables declaradas con let y const también son elevadas (hoisted), pero a diferencia de var, no se inicializan automáticamente con undefined. En su lugar, se encuentran en un estado especial conocido como `zona muerta temporal` (TDZ, por sus siglas en inglés: Temporal Dead Zone).
@@ -63,7 +63,7 @@ let myVar = "Hola";
                         </CombDd>
                     </dl>
 
-                    <TitleH3 titleH3={"HOISTING CON FUNCIONES"}/>
+                    <TitleH2 titleH2={"HOISTING CON FUNCIONES"}/>
                     <Paragraph>
                      En el caso de las funciones, solo se da el hoisting en declaraciones de función, pero no las expresiones de la función(variables que contienen funcion).
                      <br/><br/>
