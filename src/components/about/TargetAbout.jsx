@@ -3,7 +3,7 @@ import "./About.css";
 import { CompButton } from "../atoms/button";
 export const TargetAbout = () => {
   const valores = [
-    { accion: "Descargar CV", icono: "/assets/symbols/download.svg" },
+    { accion: "Descargar CV", icono: "/assets/symbols/download.svg", alt:"Icono descargar cv" },
   ];
   return (
     <section
