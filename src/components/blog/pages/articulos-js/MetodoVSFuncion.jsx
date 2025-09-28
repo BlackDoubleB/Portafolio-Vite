@@ -9,7 +9,7 @@ import { ScrollTops } from "../../../scrollTops";
 export const MetodoVSFuncion = () => {
   ScrollTops();
   return (
-    <section>
+    <section className="mt-5">
         <div>
           <ComTitleBlog tituloBlog={"METODO VS FUNCIÓN"} />
           <Paragraph>

@@ -12,9 +12,10 @@ export const Navbar = () => {
     <nav className="bg-[#A59BCD] w-full
                       sticky top-0 z-20 flex justify-center font-medium text-amber-50 ">
       <div className="flex justify-center sm:justify-between max-w-[1200px] w-full items-center max-[400px]:py-1 py-2 mx-5 sm:mx-10">
-        <div className="">
+        <Link to={enlaces[0].link}
+                  className="text-[--color-letra-parrafo] hover:bg-[#9287bf54] px-4 py-2 rounded-2xl duration-300 ease-in-out">
           <Icon icon="pixelarticons:code" className="w-10 h-10 text-white" />
-        </div>
+        </Link>
 
         <div className=" gap-10 hidden sm:flex">
          

@@ -26,7 +26,7 @@ export const Console = ({ script, language }) => {
     }, 2500);
 
     return (
-        <div className='w-full'>
+        <div className='w-full my-1'>
             <div className='flex justify-end bg-[var(--nav-terminal)] w-full rounded-t-xl px-4 py-2'>
 
                 <div onClick={handleClick} className='flex items-center hover:cursor-pointer gap-2'>
@@ -39,7 +39,7 @@ export const Console = ({ script, language }) => {
                 </div>
 
             </div>
-            <div className='grid'>
+            <div className='grid rounded-b-2xl overflow-hidden'>
                 <pre className='p-5 bg-neutral-700 overflow-x-auto'>
                     <code ref={codeRef} className={`${language} block whitespace-pre`}>
                         {script}

@@ -9,7 +9,7 @@ import { ScrollTops } from "../../../scrollTops";
 export const TiposVariables = () => {
   ScrollTops();
   return (
-    <section>
+    <section className="mt-5">
         <div>
           <ComTitleBlog tituloBlog={"VAR-CONST-LET"} />
 

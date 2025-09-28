@@ -16,7 +16,7 @@ export const ComTitleBlog = ({tituloBlog}) =>
 export const CombDt = ({combDt}) =>{
     return(
         <dt className="font-encode_sans_expanded text-[var(--color-letra-subtitulo)] text-[1rem] font-bold
-                       px-0 py-5 ">
+                       pt-2 pb-1">
             {combDt}
         </dt>
     );

@@ -12,7 +12,7 @@ import { ScrollTops } from "../../../scrollTops";
 export const FuncionesFlecha = () => {
   ScrollTops();
   return (
-    <section>
+   <section className="mt-5">
         <div>
           <ComTitleBlog tituloBlog={"FUNCIONES FLECHA"} />
           <Paragraph>
