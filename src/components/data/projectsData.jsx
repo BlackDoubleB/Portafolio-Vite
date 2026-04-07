@@ -1,4 +1,16 @@
 export const projectsData = [
+   {
+    imgSrc:
+      "https://res.cloudinary.com/doublebl/image/upload/v1775601662/dashboard_ghsj25.png",
+    title: "Sistema de Reservas Hotelera",
+    skills: ["PHP", "React", "InertiaJS", "Laravel", "Mysql"],
+    descripcion:
+      "Sistema integral full-stack para gestión de reservas hoteleras. Backend  con Laravel, frontend con React e InertiaJS, y base de datos relacional MySQL. Implementa operaciones CRUD completas, validaciones, autenticación de usuarios, filtrado, paginación  y búsquedas",
+    demoURL: "https://hotelmanager.infinityfreeapp.com",
+    repoURL: "https://github.com/BlackDoubleB/hotel-manager.git",
+    anim: "fade-left",
+  },
+
   {
     imgSrc:
       "https://res.cloudinary.com/doublebl/image/upload/v1759819786/explorador_paises_zqfase.png",
@@ -51,6 +63,11 @@ const skillIcons = {
   JavaScript: "skill-icons:javascript",
   Typescript: "skill-icons:typescript",
   React: "skill-icons:react-dark",
+  Php: "skill-icons:php-dark",
+  Laravel: "skill-icons:laravel-dark",
+  Mysql: "skill-icons:mysql-dark",
+  Git: "skill-icons:git",
+  Figma: "skill-icons:figma",
   Angular: "skill-icons:angular-dark",
   Astro: "skill-icons:astro",
   CSS: "skill-icons:css",
