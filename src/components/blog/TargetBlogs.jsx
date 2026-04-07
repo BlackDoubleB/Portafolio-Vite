@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./TargetBlogs.css";
 import propTypes from "prop-types";
 
 export const TargetBlogs = ({ title, imgSrc, link, descripcion }) => {

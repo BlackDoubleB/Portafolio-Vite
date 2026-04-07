@@ -52,7 +52,7 @@ export const TargetSkills = () => {
         </div>
         
        <Projects />
-      <Blog /> 
+      {/* <Blog />  */}
     </section>
   );
 };

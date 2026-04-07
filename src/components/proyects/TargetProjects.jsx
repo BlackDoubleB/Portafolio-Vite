@@ -27,23 +27,23 @@ export const TargetProjects = ({ title, descripcion, imgSrc, skills, repoURL, de
                             ))
                         }
                     </div>
+
+                    <div className="buttons">
+                        <a className="github" href={repoURL} target="_blank">
+                            <span>
+                                Github
+                                {(<Icon icon="quill:link-out" />)}
+                            </span>
+                        </a>
+
+                        <a className="demo" href={demoURL} target="_blank">
+                            <span>
+                                Demo
+                                {(<Icon icon="quill:link-out" />)}
+                            </span>
+                        </a>
+                    </div>
                 </div>
-
-            </div>
-            <div className="buttons">
-                <a className="github" href={repoURL} target="_blank">
-                    <span>
-                        Github
-                        {(<Icon icon="quill:link-out" />)}
-                    </span>
-                </a>
-
-                <a className="demo" href={demoURL} target="_blank">
-                    <span>
-                        Demo
-                        {(<Icon icon="quill:link-out" />)}
-                    </span>
-                </a>
             </div>
         </div>
 

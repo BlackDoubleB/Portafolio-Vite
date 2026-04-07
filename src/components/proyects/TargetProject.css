@@ -20,7 +20,7 @@
 	top: 0px;
 	transition: 0.35s;
 	background: #00000086;
-	transform: translateY(63%);
+	transform: translateY(48%);
 	padding-top:1px;
 	transition-property: transform, padding-top;
 	color: var(--on-primary);
@@ -69,14 +69,13 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	height: 20px;
-	transition: 0.35s height;
+	max-height: 20px;
+	transition: 0.35s max-height, 0.35s white-space;
 }
 
 .descripcion__container:hover .descripcion p {
 	overflow: auto;
 	white-space: wrap;
-	height: 90px;
 	max-height: 90px;
 }
 
@@ -101,14 +100,14 @@
 .card__portfolio .buttons {
 	width: 100%;
 	padding-bottom: 5px;
+	padding-top: 5px;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	gap: 22px;
 	font-size: var(--text-button);
 	z-index: 1;
-	position: absolute;
-	bottom: 0px;
+	position: relative;
 }
 
 .card__portfolio  {

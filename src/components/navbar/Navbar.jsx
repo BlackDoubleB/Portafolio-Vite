@@ -5,7 +5,6 @@ export const Navbar = () => {
   const enlaces = [
     { titulo: "Inicio", link: "/#inicio" },
     { titulo: "Proyectos", link: "/#proyectos" },
-    { titulo: "Blog", link: "/#blog" }
   ];
 
   return (

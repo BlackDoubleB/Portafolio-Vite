@@ -15,11 +15,11 @@ function App() {
       <main className="max-w-[1200px] mx-5 sm:mx-10 flex-1 mb-10">
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/blog/tipos-variables" element={<TiposVariables />} />
+          {/* <Route path="/blog/tipos-variables" element={<TiposVariables />} />
           <Route path="/blog/funciones-flecha" element={<FuncionesFlecha />} />
           <Route path="/blog/metodo-vs-funcion" element={<MetodoVSFuncion />} />
           <Route path="/blog/hoisting" element={<Hoisting />} />
-          <Route path="/blog/after-before" element={<AfterBefore />} />
+          <Route path="/blog/after-before" element={<AfterBefore />} /> */}
         </Routes>
       </main>
       <footer className="mt-auto w-full h-8"/>
